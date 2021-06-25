@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+    <data>
+        <!-- Patient Tree -->
+        <record id="tp_hopital_patient_tree" model="ir.ui.view">
+            <field name="name">tp_hopital_patient_tree</field>
+            <field name="model">tp.hopital.patient</field>
+            <field name="arch" type="xml">
+                <tree string="Patient">
+                    <field name="name" />
+                    <field name="last_name" />
+                    <field name="first_name" />
+                    <field name="date_inscription" />
+                    <field name="medecin_id" />
+                </tree>
+            </field>
+        </record>
+
+        <!-- Patient Form -->
+        <record id="tp_hopital_patient_form" model="ir.ui.view">
+            <field name="name">tp_hopital_patient_form</field>
+            <field name="model">tp.hopital.patient</field>
+            <field name="arch" type="xml">
+                <form string="Patient">
+                    <group>
+                        <group>                        
+                            <field name="name" />
+                            <field name="last_name" />
+                            <field name="first_name" />
+                            <field name="date_naissance" />
+                            <field name="sexe" />
+                            <field name="email" />
+                        </group>
+                        <group>                            
+                            <field name="tel" />
+                            <field name="prise_en_charge" />
+                            <field name="pourcentage" />
+                            <field name="prix_ticket" />
+                            <field name="num_dossier" />
+                            <field name="date_inscription" />
+                            <field name="medecin_id" />
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!-- L'action du menu Patient -->
+
+        <record model="ir.actions.act_window" id="action_tp_hopital_patient">
+          <field name="name">Patient</field>
+          <field name="type">ir.actions.act_window</field>
+          <field name="res_model">tp.hopital.patient</field>
+          <field name="view_type">form</field>
+          <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>

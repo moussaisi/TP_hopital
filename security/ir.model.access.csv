@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_tp_hopital_patient_admin,tp.hopital.patient,model_tp_hopital_patient,base.user_admin,1,1,1,1
+access_tp_hopital_medecin_admin,tp.hopital.medecin,model_tp_hopital_medecin,base.user_admin,1,1,1,1
+access_tp_hopital_specialite_admin,tp.hopital.specialite,model_tp_hopital_specialite,base.user_admin,1,1,1,1
+access_tp_hopital_grade_admin,tp.hopital.grade,model_tp_hopital_grade,base.user_admin,1,1,1,1

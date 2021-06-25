@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+    <data>
+        <!-- medecin Tree -->
+        <record id="tp_hopital_medecin_tree" model="ir.ui.view">
+            <field name="name">tp_hopital_medecin_tree</field>
+            <field name="model">tp.hopital.medecin</field>
+            <field name="arch" type="xml">
+                <tree string="medecin">
+                    <field name="name" />
+                    <field name="matricule" />
+                    <field name="salaire" />
+                </tree>
+            </field>
+        </record>
+
+        <!-- medecin Form -->
+        <record id="tp_hopital_medecin_form" model="ir.ui.view">
+            <field name="name">tp_hopital_medecin_form</field>
+            <field name="model">tp.hopital.medecin</field>
+            <field name="arch" type="xml">
+                <form string="medecin">
+                        <group>                      
+                            <field name="name" />
+                            <field name="matricule" />
+                            <field name="salaire" />
+                            <field name="grade_id" />
+                            <field name="specialite_id" />
+                        </group>
+                </form>
+            </field>
+        </record>
+
+        <!-- L'action du menu medecin -->
+
+        <record model="ir.actions.act_window" id="action_tp_hopital_medecin">
+          <field name="name">medecin</field>
+          <field name="type">ir.actions.act_window</field>
+          <field name="res_model">tp.hopital.medecin</field>
+          <field name="view_type">form</field>
+          <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>

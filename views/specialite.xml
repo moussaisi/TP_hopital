@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+    <data>
+        <!-- specialite Tree -->
+        <record id="tp_hopital_specialite_tree" model="ir.ui.view">
+            <field name="name">tp_hopital_specialite_tree</field>
+            <field name="model">tp.hopital.specialite</field>
+            <field name="arch" type="xml">
+                <tree string="specialite">
+                    <field name="name" />
+                    <field name="code" />
+                </tree>
+            </field>
+        </record>
+
+        <!-- specialite Form -->
+        <record id="tp_hopital_specialite_form" model="ir.ui.view">
+            <field name="name">tp_hopital_specialite_form</field>
+            <field name="model">tp.hopital.specialite</field>
+            <field name="arch" type="xml">
+                <form string="specialite">
+                        <group>                      
+                            <field name="name" />
+                            <field name="code" />
+                            <field name="effectif" />
+                        </group>
+                        <notebook>
+                            <page string="Liste des medecins">
+                                <field name="medecins_ids" />                                
+                            </page>
+                        </notebook>
+                </form>
+            </field>
+        </record>
+
+        <!-- L'action du menu specialite -->
+
+        <record model="ir.actions.act_window" id="action_tp_hopital_specialite">
+          <field name="name">specialite</field>
+          <field name="type">ir.actions.act_window</field>
+          <field name="res_model">tp.hopital.specialite</field>
+          <field name="view_type">form</field>
+          <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>

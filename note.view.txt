@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        
+    <!-- Menu du Gauche -->   
+        <menuitem name="TP HOPITAL" id="tp_hopital_menu"
+            sequence="1" 
+            />
+        <!-- Menu Patient  -->
+        <menuitem name="Patient" id="tp_hopital_patient" parent="tp_hopital_menu"
+            sequence="1" action="action_tp_hopital_patient"
+            />
+         <!-- Menu Medecin  -->
+        <menuitem name="Medecin" id="tp_hopital_medecin" parent="tp_hopital_menu"
+            sequence="2" action="action_tp_hopital_medecin"
+            />
+         <!-- Menu Configuration  -->
+        <menuitem name="Configuration" id="tp_hopital_configuration" parent="tp_hopital_menu"
+            sequence="3"
+            />
+            <menuitem name="Service" id="tp_hopital_service" parent="tp_hopital_configuration"
+            sequence="1" action="action_tp_hopital_service"
+            />
+            <menuitem name="Grade" id="tp_hopital_grade" parent="tp_hopital_configuration"
+            sequence="2" action="action_tp_hopital_grade"
+            />
+            <menuitem name="Spécialité" id="tp_hopital_specialite" parent="tp_hopital_configuration"
+            sequence="3" action="action_tp_hopital_specialite"
+            />
+            <menuitem name="Groupe Sanguin" id="tp_hopital_groupesanguin" parent="tp_hopital_configuration"
+            sequence="4" action="action_tp_hopital_groupesanguin"
+            />
+            <menuitem name="Salles" id="tp_hopital_salle" parent="tp_hopital_configuration"
+            sequence="5" action="action_tp_hopital_salle"
+            />
+            <menuitem name="Lits" id="tp_hopital_lit" parent="tp_hopital_configuration"
+            sequence="6" action="action_tp_hopital_lit"
+            />
+
+    </data>
+</odoo>

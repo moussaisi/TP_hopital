@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        
+    <!-- Menu Principal -->   
+        <menuitem name="TP HOPITAL ISI" id="menu_principal_tp"
+            sequence="1" 
+            />
+        <!-- Menu Patient  -->
+        <menuitem name="Patient" id="tp_hopital_patient" parent="menu_principal_tp"
+            sequence="1" action="action_tp_hopital_patient"
+            />
+        <!-- Menu medecin  -->
+        <menuitem name="medecin" id="tp_hopital_medecin" parent="menu_principal_tp"
+            sequence="2" action="action_tp_hopital_medecin"
+            />
+        <!-- Menu grade  -->
+        <menuitem name="grade" id="tp_hopital_grade" parent="menu_principal_tp"
+            sequence="3" action="action_tp_hopital_grade"
+            />
+        <!-- Menu specialite  -->
+        <menuitem name="specialite" id="tp_hopital_specialite" parent="menu_principal_tp"
+            sequence="4" action="action_tp_hopital_specialite"
+            />
+        
+
+    </data>
+</odoo>
