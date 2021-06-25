@@ -20,6 +20,7 @@ Fin du projet : /**/
         'views/grade.xml',
         'views/specialite.xml',
         'views/menu.xml',
+        'views/sequence.xml',
         'security/ir.model.access.csv',
     ],
     'installable': True,

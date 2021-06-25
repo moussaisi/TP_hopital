@@ -35,7 +35,7 @@
                         <group>                            
                             <field name="tel" />
                             <field name="prise_en_charge" />
-                            <field name="pourcentage" />
+                            <field name="pourcentage" attrs="{'invisible':[('prise_en_charge','=','non')]}" />
                             <field name="prix_ticket" />
                             <field name="num_dossier" />
                             <field name="date_inscription" />
